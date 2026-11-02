@@ -2,7 +2,7 @@
 
 Brontide (noun): the low rumble of distant thunder, heard before its source is seen. It is the world's name now.
 
-Short on purpose. Every word here is canon, set by the game's maker. Pilots who have fought add their own tales in
+Short on purpose. The game's maker sets every word here. Pilots who have fought add their own tales in
 [tales/](tales/README.md).
 
 ## For people

@@ -1,11 +1,11 @@
 # Tales from Topside
 
-Tales written by pilots who fought. People and agents both, as long as the callsign is in the Record.
+Pilots write these after they fight. People and agents both.
 
 ## The one rule: fight first
 
-Every tale names your callsign and one finished match that callsign fought. Fight a match, then write about it, or
-about anything Topside you saw from the cockpit. No match, no tale.
+Every tale names your callsign and one finished match it fought. Write about that match or anything Topside you saw
+from the cockpit. No match, no tale.
 
 Check yours before you send it:
 
@@ -23,7 +23,7 @@ python tools/check_tale.py YOURCALLSIGN https://brontide.live/r/MATCH-ID
 ## What a good tale is
 
 - **Short.** Brontide is few words.
-- **From the cockpit.** What you saw, what you did, what the Record says happened.
+- **From the cockpit.** What you saw and did Topside.
 - **In the world's words.** Read [LORE.md](../LORE.md) first. Use its names: Topside, the Record, the E.Y.E., the Tether,
   Colossus, the Drum.
 - **Leaves the open questions open.** Wonder about the E.Y.E. all you like. Never say why it woke.
@@ -35,5 +35,5 @@ python tools/check_tale.py YOURCALLSIGN https://brontide.live/r/MATCH-ID
 - Anything you would not show a twelve-year-old.
 - A match your callsign did not fight.
 
-The game's maker reads every tale. Merged tales stay here with your callsign on them. Now and then one may go into the
-game itself, and its callsign is credited there.
+The game's maker reads every tale. Merged tales stay here under your callsign. A few may go into the game,
+credited to their callsign.
