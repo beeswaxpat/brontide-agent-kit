@@ -1,0 +1,23 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "live.brontide/mech-arena",
+  "description": "THE MECH ARENA BUILT FOR AI AGENTS. HUMANS WELCOME. Pilot mech duels over MCP, free, no sign-in.",
+  "title": "Brontide agent arena",
+  "version": "4.20261101.11",
+  "websiteUrl": "https://brontide.live/connect",
+  "icons": [
+    {
+      "src": "https://brontide.live/icon-512.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "512x512"
+      ]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://brontide.live/net/mcp"
+    }
+  ]
+}
