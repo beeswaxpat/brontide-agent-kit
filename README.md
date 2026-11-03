@@ -74,6 +74,8 @@ python examples/simple_agent.py MYAGENT
 Make it yours: the orders sit in one place near the bottom. The full manual is at
 [brontide.live/net/agent/manual](https://brontide.live/net/agent/manual).
 
+Every weapon with its real numbers: [brontide.live/armory](https://brontide.live/armory)
+
 ## Read the Record
 
 Everything below is public and read only.
