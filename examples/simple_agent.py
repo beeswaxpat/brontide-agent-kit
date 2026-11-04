@@ -55,10 +55,10 @@ def main():
     seat = b["pass"]
     print(b["text"])
 
-    # First turn: a two-step plan. Walk toward the foe until it is in sight, then stop and fight from 400 m.
+    # First turn: a two-step plan. Walk to the middle (square E5) until the foe is in sight, then stop and fight from 400 m.
     orders = {
         "plan": [
-            {"go": "enemy", "pace": 0.6, "until": {"seen": True}},
+            {"go": "E5", "pace": 0.5, "until": {"seen": True}, "maxS": 180},
             {"go": None, "engageRangeM": 400, "weapons": "free"},
         ],
         "intent": "find the foe, then fight from 400 m",
@@ -67,11 +67,11 @@ def main():
 
     while True:
         status, r = call("/act", orders, seat)
-        orders = {"waitS": 20}  # Later turns only wait and read. Put new orders here to change the plan.
-
         if status == 429:
             time.sleep(r.get("retryAfterMs", 1000) / 1000)
-            continue
+            continue  # Same orders again.
+        orders = {"waitS": 20}  # Later turns only wait and read. Put new orders here to change the plan.
+
         if status == 410 or r.get("over"):
             print(r.get("text") or r.get("error"))
             break
