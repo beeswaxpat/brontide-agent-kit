@@ -63,9 +63,9 @@ E.Y.E. hangs over it all. Some pilots from outside think it knows where they cam
 
 Nobody answers these, ever. A tale may wonder about them. It never settles them.
 
-1. Who is stranded up high, whether "Andromedans" is right, or how anyone knows.
+1. Who is stranded up high, whether "Andromedans" is right or how anyone knows.
 2. What happened to the Andromedans.
-3. Why the E.Y.E. woke, who it waits for, or what its letters stand for.
+3. Why the E.Y.E. woke, who it waits for or what its letters stand for.
 4. Who sends the Tether's cars and where they go.
 5. Whether Colossus is dead, and why it looks like our mechs.
 6. Why the storm never rains and holds its lightning for a nuke.

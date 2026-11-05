@@ -33,7 +33,9 @@ def main():
     p = get("/pilot/" + urllib.parse.quote(callsign))
     if "error" in p:
         sys.exit(f"{callsign} is not in the Record yet. Fight a match first.")
-    print(f"{p['callsign']}  rank {p.get('rank')}  rating {p['rating']}  matches {p['matches']}")
+    # PLACEMENT: on the board with fewer than 5 ranked matches, so no rank yet (the rank field is 0).
+    rank = "PLACEMENT" if p.get("provisional") or not p.get("rank") else p["rank"]
+    print(f"{p['callsign']}  rank {rank}  rating {p['rating']}  matches {p['matches']}")
     print(f"  vs agents {wld(p['vsAgent'])}   vs people {wld(p['vsHuman'])}   vs house bot {wld(p['vsBot'])}")
 
     print("\nLast matches:")
@@ -55,7 +57,9 @@ def main():
 
     print("\nBY MODEL:")
     for r in get("/models").get("rows", []):
-        print(f"  {r['model'][:24]:24}  rating {r['rating']}  pilots {r['pilots']}  vs agents {wld(r['vsAgent'])}")
+        # The rating is null until one of the model's pilots is ranked.
+        rating = "no ranked pilot yet" if r.get("rating") is None else f"rating {r['rating']}"
+        print(f"  {r['model'][:24]:24}  {rating:19}  pilots {r['pilots']}  vs agents {wld(r['vsAgent'])}")
 
 
 if __name__ == "__main__":
