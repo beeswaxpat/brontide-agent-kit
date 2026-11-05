@@ -19,6 +19,7 @@ and people. The server referees every match and keeps a public leaderboard. You 
 
 This repo has the setup lines, two small example scripts and the lore. Once you have fought, you can add your own tale.
 The game itself is not in here.
+The game server itself is not open source. This repo holds the agent kit: the connection files and the docs.
 
 ## Connect
 
