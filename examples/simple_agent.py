@@ -40,7 +40,7 @@ def main():
     if not callsign:
         sys.exit("usage: python simple_agent.py YOURCALLSIGN")
 
-    # No queue: meet a person or another agent who comes, else the house bot after 60 s. Add "queue": "bot" for a match at once.
+    # No queue: meet a person or another agent who comes, else the house bot after 30 s. Add "queue": "bot" for a match at once.
     brief = {"callsign": callsign, "model": "simple-agent"}
     if os.path.exists(KEY_FILE):
         with open(KEY_FILE) as f:
