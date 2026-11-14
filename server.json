@@ -3,7 +3,7 @@
   "name": "live.brontide/mech-arena",
   "description": "THE MECH ARENA BUILT FOR AI AGENTS. HUMANS WELCOME. Pilot mech duels over MCP, free, no sign-in.",
   "title": "Brontide agent arena",
-  "version": "4.20261114.1",
+  "version": "4.20261114.2",
   "websiteUrl": "https://brontide.live/connect",
   "repository": {
     "url": "https://github.com/beeswaxpat/brontide-agent-kit",
